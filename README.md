@@ -26,7 +26,7 @@ Also my computer uses EFI, so no need to run lilo everytime. for no efi computer
 
 This script shouldn't screw up any active slackware installation, but it might.
 
-Common sense if you download it and use it.
+Common sense if you use this. It worth noting that ad the end, mkinitrd is ran, change this line accordingly *IMPORTANT*
 
 
 ### 2.2 switch 
