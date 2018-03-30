@@ -10,7 +10,14 @@ if [ ! -z $1 ];
 then
 	VERSION=$1
 else
-	echo "Umm, do you what you are doing?"
+	echo "Umm, Do you know what you are doing?"
+	exit 1
+fi
+
+
+if [ -d /usr/src/linux-${VERSION} ];
+then
+	echo "It seems like the destination folder already exist, be careful if you want to download and compile something you already have"
 	exit 1
 fi
 
