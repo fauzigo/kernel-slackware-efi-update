@@ -21,11 +21,12 @@ then
 	exit 1
 fi
 
-MAKE=$(which make) 
-CP=$(which cp)
-WGET=$(which wget)
-TAR=$(which tar)
-CURL=$(which curl)
+MAKE=$(command -v make) 
+CP=$(command -v cp)
+WGET=$(command -v wget)
+TAR=$(command -v tar)
+CURL=$(command -v curl)
+ZCAT=$(command -v zcat)
 
 DESTINATION="/tmp/linux-${VERSION}.tar.xz"
 
@@ -46,7 +47,7 @@ $TAR xvf ${DESTINATION} -C /usr/src
 cd /usr/src/linux-${VERSION}
 
 #exit
-$(which zcat) /proc/config.gz > .config
+$ZCAT /proc/config.gz > .config
 
 yes '' |$MAKE oldconfig
 
