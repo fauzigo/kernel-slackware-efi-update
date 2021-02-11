@@ -39,7 +39,7 @@ switchKernel.sh would make a switch between current kernel and the version you t
 ## 3. Usage
 
 ```
-kernelCompiler.sh 4.15.7
-switchKernel.sh 4.15.7
+bash kernelCompiler.sh 4.15.7
+bash switchKernel.sh 4.15.7
 ```
 
