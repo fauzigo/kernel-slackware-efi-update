@@ -14,7 +14,6 @@ else
 fi
 
 
-
 cd /boot
 unlink /boot/System.map
 unlink /boot/config
