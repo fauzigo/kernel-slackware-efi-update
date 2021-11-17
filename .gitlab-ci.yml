@@ -11,5 +11,5 @@ shell_executor:
     - shell
   script:
     - ls -la 
-	- whoami
-	- id
+    - whoami
+    - id
