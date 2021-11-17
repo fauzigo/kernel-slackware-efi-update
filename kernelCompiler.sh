@@ -62,3 +62,4 @@ $CP .config /boot/config-huge-${VERSION}
 $CP /boot/initrd-${VERSION}.gz /boot/efi/EFI/Slackware
 $CP /boot/vmlinuz-huge-${VERSION} /boot/efi/EFI/Slackware
 
+echo "Completed on $(date)"
