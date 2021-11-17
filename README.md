@@ -3,7 +3,7 @@ kernel update script for slackware
 
 ## 1. QuickStart
 ```
-git clone git@github.com:fauzigo/kernel-slackware-efi-update.git
+git clone https://github.com/fauzigo/kernel-slackware-efi-update.git
 
 ```
 
