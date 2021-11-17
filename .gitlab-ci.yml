@@ -9,6 +9,7 @@ shell_executor:
   needs: []
   tags:
     - shell
-    - jlsebatch1
   script:
     - ls -la 
+	- whoami
+	- id
