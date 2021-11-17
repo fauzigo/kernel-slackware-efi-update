@@ -1,0 +1,14 @@
+before_script:
+  - echo "before script"
+
+stages:
+  - shell
+
+shell_executor:
+  stage: shell
+  needs: []
+  tags:
+    - shell
+    - jlsebatch1
+  script:
+    - ls -la 
