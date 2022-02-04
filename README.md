@@ -43,4 +43,5 @@ bash kernelCompiler.sh 4.15.7
 bash switchKernel.sh 4.15.7
 ```
 
+Elilo might not be supported on certain systems anymore, Slackware comes preloaded with grub and switching is quite easy.
 
