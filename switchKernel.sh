@@ -27,17 +27,4 @@ ln -s initrd-${VERSION}.gz initrd.gz
 ln -s vmlinuz-huge-${VERSION} vmlinuz-huge 
 ln -s vmlinuz-huge-${VERSION} vmlinuz
 
-cd /boot/efi/EFI/Slackware
-
-if [ -z $2 ];
-then
-	old=$(uname -r)
-else
-	old=$2
-fi
-
-mv initrd.gz initrd-${old}.gz
-mv vmlinuz vmlinuz-huge-${old}
-
-mv initrd-${VERSION}.gz initrd.gz
-mv vmlinuz-huge-${VERSION} vmlinuz
+grub-mkconfig -o /boot/grub/grub.cfg

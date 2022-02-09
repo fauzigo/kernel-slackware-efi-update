@@ -57,9 +57,10 @@ $CP arch/x86/boot/bzImage /boot/vmlinuz-huge-${VERSION}
 $CP System.map /boot/System.map-huge-${VERSION}
 $CP .config /boot/config-huge-${VERSION}
 
-/sbin/mkinitrd -c -k ${VERSION} -f ext4 -r luksnvme0n1p3 -m ext4 -C /dev/nvme0n1p3 -u -o /boot/initrd-${VERSION}.gz -h /dev/nvme0n1p4
+#/sbin/mkinitrd -c -k ${VERSION} -f ext4 -r luksnvme0n1p3 -m ext4 -C /dev/nvme0n1p3 -u -o /boot/initrd-${VERSION}.gz -h /dev/nvme0n1p4
+/sbin/mkinitrd -c -k ${VERSION} -f ext4 -r luksnvme0n1p3 -m ext4 -C /dev/nvme0n1p3 -u -o /boot/initrd-${VERSION}.gz #-h /dev/nvme0n1p4
 
-$CP /boot/initrd-${VERSION}.gz /boot/efi/EFI/Slackware
-$CP /boot/vmlinuz-huge-${VERSION} /boot/efi/EFI/Slackware
+#$CP /boot/initrd-${VERSION}.gz /boot/efi/EFI/Slackware
+#$CP /boot/vmlinuz-huge-${VERSION} /boot/efi/EFI/Slackware
 
 echo "Completed on $(date)"
